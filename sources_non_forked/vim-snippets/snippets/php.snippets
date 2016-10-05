@@ -661,3 +661,14 @@ snippet fe "file_exists"
 	file_exists(${1:file})$0
 snippet id "is_dir"
 	is_dir(${1:path})$0
+# test
+snippet testing "this is a test"
+	bla bla bla test
+# Laravel
+# Routes
+snippet rget "Laravel Route get"
+	Route::get('${1:test}', function () {
+		return view('${2:$1}');
+	});
+snippet rres "Laravel Route resource"
+	Route::resource('${1:temp}', '$1Controller');
